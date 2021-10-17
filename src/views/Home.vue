@@ -140,6 +140,7 @@ export default {
 <style scoped>
 .container {
   padding-top: 30px;
+  min-height: 100vh;
 }
 ul {
   list-style-type: none;
