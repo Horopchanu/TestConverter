@@ -19,13 +19,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-#app {
-}
 #nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #17a2b8;
+  background-color: #263238;
   padding-top: 20px;
   padding-bottom: 20px;
 }

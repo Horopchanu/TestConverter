@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <b-container class="container">
-      <b-card bg-variant="primary">
+      <b-card class="container__card">
         <h1>Список валют</h1>
         <b-form-input v-model="search" />
 
@@ -10,7 +10,7 @@
             v-for="val in searchHandler"
             :key="val.id"
             class="col-lg-5 mb-3"
-            bg-variant="info  "
+            style="background:#018786"
           >
             <b-card>
               <b-row v-if="!changeType">
@@ -137,10 +137,13 @@ export default {
   components: {},
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .container {
   padding-top: 30px;
   min-height: 100vh;
+  &__card {
+    background-color: #263238;
+  }
 }
 ul {
   list-style-type: none;
@@ -169,6 +172,6 @@ p {
 }
 .home {
   height: 100%;
-  background-color: #0dcaf0;
+  background-color: #018786;
 }
 </style>

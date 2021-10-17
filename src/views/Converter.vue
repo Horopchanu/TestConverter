@@ -1,10 +1,10 @@
 <template>
   <div class="converter">
     <b-container class="container">
-      <b-card v-if="!changeType" bg-variant="primary">
+      <b-card v-if="!changeType" class="container__card">
         <b-row>
           <b-col><h2>Конвертер Валют</h2></b-col>
-          <b-card bg-variant="info">
+          <b-card style="background:#018786">
             <b-card>
               <b-row>
                 <b-col>
@@ -164,7 +164,7 @@ export default {
   mounted() {},
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 h2 {
   text-align: center;
   color: whitesmoke;
@@ -179,14 +179,17 @@ p {
   color: #555555;
 }
 .select {
-  border: 2px solid #0dcaf0;
+  border: 2px solid #018786;
   border-radius: 4px;
 }
 .converter {
   height: 100vh;
-  background-color: #0dcaf0;
+  background-color: #018786;
 }
 .container {
   padding-top: 30px;
+  &__card {
+    background-color: #263238;
+  }
 }
 </style>
