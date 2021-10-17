@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <b-container>
+    <b-container class="container">
       <b-card bg-variant="primary">
         <h1>Список валют</h1>
         <b-form-input v-model="search" />
@@ -138,6 +138,9 @@ export default {
 };
 </script>
 <style scoped>
+.container {
+  padding-top: 30px;
+}
 ul {
   list-style-type: none;
 }
@@ -162,5 +165,9 @@ p {
 }
 .title-valute {
   text-align: left;
+}
+.home {
+  height: 100%;
+  background-color: #0dcaf0;
 }
 </style>

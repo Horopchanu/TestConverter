@@ -20,8 +20,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 #app {
-  background-color: #0dcaf0;
-  height: 100vh;
 }
 #nav {
   display: flex;
@@ -30,7 +28,6 @@ export default {
   background-color: #17a2b8;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 30px;
 }
 .nav__item {
   margin-right: 30px;

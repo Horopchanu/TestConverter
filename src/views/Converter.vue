@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="converter">
     <b-container class="container">
       <b-card v-if="!changeType" bg-variant="primary">
         <b-row>
@@ -181,5 +181,12 @@ p {
 .select {
   border: 2px solid #0dcaf0;
   border-radius: 4px;
+}
+.converter {
+  height: 100vh;
+  background-color: #0dcaf0;
+}
+.container {
+  padding-top: 30px;
 }
 </style>
