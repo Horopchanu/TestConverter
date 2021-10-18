@@ -115,7 +115,7 @@ export default {
   },
   components: {},
   computed: {
-    ...mapGetters(["GET_VALUTES", "GET_ISSHOWED"]),
+    ...mapGetters(["GET_VALUTES"]),
     result() {
       return (
         ((this.GET_VALUTES[this.selected1].Value /
