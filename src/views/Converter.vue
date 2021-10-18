@@ -7,17 +7,17 @@
           <b-card style="background:#018786">
             <b-card>
               <b-row>
-                <b-col>
+                <b-col class="col-sm-12 col-md-5">
                   <h3>{{ GET_VALUTES[this.selected1].Name }}</h3>
                   <b-row
-                    ><b-col cols="2">
+                    ><b-col class="col-lg-3 col-md-4 col-sm-4 col-sm-6"  >
                       <b-form-select
                         v-model="selected1"
                         :options="options"
                         class="h-100 w-100 select"
                       ></b-form-select>
                     </b-col>
-                    <b-col cols="8">
+                    <b-col class="col-lg-9 col-md-7 col-sm-6">
                       <b-form-input
                         v-model="number"
                         @keypress="isNumber($event)"
@@ -26,20 +26,20 @@
                   ></b-row>
                 </b-col>
 
-                <b-col cols="1"
+                <div class="col-lg-1 col-md-1 col-sm-12"
                   ><b-button @click="change"
                     ><b-icon icon="arrow-left-right"/></b-button
-                ></b-col>
-                <b-col
+                ></div>
+                <b-col class="col-sm-12 col-md-6"
                   ><h3>{{ GET_VALUTES[this.selected2].Name }}</h3>
                   <b-row>
-                    <b-col cols="2">
+                    <b-col class="col-lg-3 col-md-4">
                       <b-form-select
                         v-model="selected2"
                         :options="options"
                         class="h-100 w-100 select"
                       ></b-form-select> </b-col
-                    ><b-col cols="8">
+                    ><b-col class="col-lg-9 col-md-7">
                       <b-form-input
                         v-model="result"
                         readonly
@@ -49,23 +49,23 @@
           ></b-card>
         </b-row>
       </b-card>
-      <b-card v-if="changeType" bg-variant="primary">
+      <b-card v-if="changeType" class="container__card">
         <b-row>
           <b-col><h2>Конвертер Валют</h2></b-col>
-          <b-card bg-variant="info">
+          <b-card style="background:#018786">
             <b-card>
               <b-row>
-                <b-col>
+                <b-col class="col-sm-12 col-md-5">
                   <h3>{{ GET_VALUTES[this.selected2].Name }}</h3>
                   <b-row
-                    ><b-col cols="2">
+                    ><b-col class="col-lg-3 col-md-4 col-sm-4 col-sm-6">
                       <b-form-select
                         v-model="selected2"
                         :options="options"
                         class="h-100 w-100 select"
                       ></b-form-select>
                     </b-col>
-                    <b-col cols="8">
+                    <b-col class="col-lg-9 col-md-7 col-sm-6">
                       <b-form-input
                         v-model="number"
                         @keypress="isNumber($event)"
@@ -74,20 +74,20 @@
                   ></b-row>
                 </b-col>
 
-                <b-col cols="1"
+                <div class="col-lg-1 col-md-1 col-sm-12"
                   ><b-button @click="change"
                     ><b-icon icon="arrow-left-right"/></b-button
-                ></b-col>
-                <b-col
+                ></div>
+                <b-col class="col-sm-12 col-md-5"
                   ><h3>{{ GET_VALUTES[this.selected1].Name }}</h3>
                   <b-row>
-                    <b-col cols="2">
+                    <b-col class="col-lg-3 col-md-4 col-sm-4 col-sm-6">
                       <b-form-select
                         v-model="selected1"
                         :options="options"
                         class="h-100 w-100 select"
                       ></b-form-select> </b-col
-                    ><b-col cols="8">
+                    ><b-col class="col-lg-9 col-md-7 col-sm-6">
                       <b-form-input
                         v-model="resultChange"
                         readonly
